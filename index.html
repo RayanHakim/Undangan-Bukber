@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Bukber MIPA 4 - Kedai Satu Satu</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#FAFAFA] text-gray-800 antialiased overflow-x-hidden relative islamic-pattern">
+
+    <audio id="bgMusic" loop>
+        <source src="lagu_bukber.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="musicControl" class="fixed bottom-6 right-6 z-50 bg-gold-solid text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition-all">
+        <i id="musicIcon" class="fa-solid fa-music"></i>
+    </div>
+
+    <div class="lantern-container hidden md:block absolute top-0 left-10 w-16 opacity-80"><i class="fa-solid fa-mosque text-5xl text-gold-solid floating-slow"></i></div>
+    <div class="lantern-container absolute top-10 right-5 md:right-20 w-12 opacity-80"><i class="fa-solid fa-star-and-crescent text-4xl text-gold-solid floating-fast"></i></div>
+
+    <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative z-10">
+        <div data-aos="zoom-in" data-aos-duration="1500" class="glass-card p-10 md:p-16 rounded-[2rem] max-w-3xl w-full border border-yellow-500/30">
+            <h3 class="font-poppins text-sm md:text-base text-gray-500 tracking-[0.3em] uppercase mb-4">Ramadhan Kareem 1447 H</h3>
+            
+            <h1 class="font-playfair text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-gradient-gold">
+                Silaturahmi & <br>Buka Bersama
+            </h1>
+            
+            <p class="font-poppins text-lg text-gray-600 mb-2">Keluarga Besar Kelas</p>
+            <p class="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-10">MIPA 4</p>
+            
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-yellow-500 to-transparent mx-auto mb-10 opacity-50"></div>
+            
+            <p class="font-poppins text-gray-600 max-w-lg mx-auto mb-10 leading-relaxed">
+                Tanpa mengurangi rasa hormat, kami mengundang teman-teman MIPA 4 untuk kembali berkumpul, bercerita, dan menyambung tali silaturahmi di bulan yang suci ini.
+            </p>
+            
+            <a href="#detail" id="btnBuka" class="inline-block font-poppins font-medium bg-gold-solid text-white px-8 py-4 rounded-full shadow-[0_10px_30px_rgba(212,175,55,0.4)] hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(212,175,55,0.6)] transition-all duration-300">
+                Buka Undangan
+            </a>
+        </div>
+    </section>
+
+    <section id="detail" class="py-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-playfair text-4xl font-bold text-gray-900 mb-4">Waktu & Tempat</h2>
+                <p class="font-poppins text-gray-500">Catat tanggalnya dan pastikan kamu hadir!</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 font-poppins">
+                <div class="glass-card p-8 rounded-3xl text-center hover-gold group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto bg-yellow-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-regular fa-calendar text-2xl text-gold-solid"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Kamis</h3>
+                    <p class="text-gold-solid font-bold text-lg mb-1">19 Maret 2026</p>
+                    <p class="text-gray-500 text-sm">Pukul 17.30 WIB - Selesai</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl text-center hover-gold group relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
+                    <div class="w-16 h-16 mx-auto bg-yellow-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-location-dot text-2xl text-gold-solid"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Kedai Satu Satu</h3>
+                    <p class="text-gray-600 font-medium mb-1">Purworejo</p>
+                    <a href="https://share.google/Dv8NQPcq4mV6nlYQS" target="_blank" class="inline-block mt-4 text-sm text-gold-solid border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-50 transition-colors">
+                        Buka Google Maps
+                    </a>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl text-center hover-gold group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto bg-yellow-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shirt text-2xl text-gold-solid"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dresscode</h3>
+                    <p class="text-gray-600 font-medium mb-1">Cosplay Takjil/Bebas</p>
+                    <p class="text-gray-500 text-sm">Yang penting rapi sopan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-white border-y border-gray-100 relative z-10">
+        <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
+            <h3 class="font-playfair text-2xl font-bold text-gray-800 mb-8">Menuju Waktu Buka Puasa (Maghrib)</h3>
+            
+            <div class="flex justify-center gap-4 md:gap-8 font-poppins">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 md:w-24 md:h-24 bg-gray-50 rounded-2xl flex items-center justify-center shadow-inner border border-yellow-100">
+                        <span id="hours" class="text-3xl md:text-4xl font-bold text-gold-solid">00</span>
+                    </div>
+                    <span class="text-xs md:text-sm text-gray-500 mt-2 uppercase tracking-wider">Jam</span>
+                </div>
+                <div class="text-3xl md:text-4xl font-bold text-gray-300 mt-4 md:mt-6">:</div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 md:w-24 md:h-24 bg-gray-50 rounded-2xl flex items-center justify-center shadow-inner border border-yellow-100">
+                        <span id="minutes" class="text-3xl md:text-4xl font-bold text-gold-solid">00</span>
+                    </div>
+                    <span class="text-xs md:text-sm text-gray-500 mt-2 uppercase tracking-wider">Menit</span>
+                </div>
+                <div class="text-3xl md:text-4xl font-bold text-gray-300 mt-4 md:mt-6">:</div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 md:w-24 md:h-24 bg-gray-50 rounded-2xl flex items-center justify-center shadow-inner border border-yellow-100">
+                        <span id="seconds" class="text-3xl md:text-4xl font-bold text-gold-solid">00</span>
+                    </div>
+                    <span class="text-xs md:text-sm text-gray-500 mt-2 uppercase tracking-wider">Detik</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center font-poppins relative z-10">
+        <p class="text-gray-500 text-sm">Ditunggu kehadirannya teman-teman!</p>
+        <p class="text-gray-400 text-xs mt-2">MIPA 4 SMA | 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+
+        // COUNTDOWN LOGIC
+        const countDownDate = new Date("Mar 19, 2026 17:55:00").getTime();
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+            
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+        }, 1000);
+
+        // MUSIC LOGIC
+        const music = document.getElementById("bgMusic");
+        const musicBtn = document.getElementById("musicControl");
+        const musicIcon = document.getElementById("musicIcon");
+        const btnBuka = document.getElementById("btnBuka");
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                music.pause();
+                musicIcon.classList.replace("fa-pause", "fa-music");
+            } else {
+                music.play();
+                musicIcon.classList.replace("fa-music", "fa-pause");
+            }
+            isPlaying = !isPlaying;
+        }
+
+        musicBtn.addEventListener("click", toggleMusic);
+
+        // Auto-play saat klik "Buka Undangan"
+        btnBuka.addEventListener("click", function() {
+            if (!isPlaying) {
+                toggleMusic();
+            }
+        });
+    </script>
+</body>
+</html>
